@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <style>
+       body{
+        background-image: url("musicpiano.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+       }
+       li{
+           cursor: pointer;
+           margin-left: 45%; 
+       }
+       #aud{
+            margin-left: 38%;    
+        
+            }
+        #repeatBtn{
+            background-color: cornflowerblue;
+            color: red;
+            cursor: pointer;
+            border-radius: 20px;
+            width: 70px;
+            height: 30px;
+        }
+        #shuffleBtn{
+            background-color: cornflowerblue;
+            color: red;
+            cursor: pointer;
+            border-radius: 20px;
+            width: 70px;
+            height: 30px; 
+        }
+
+   
+   </style>
+
+
+</head>
+<body>
+    
+<audio id="aud" src ="music1.mp3" controls >
+    
+    </audio>
+    <input type="button" id="repeatBtn" value="Repeat">
+    <input type="button" id="shuffleBtn" value="Shuffle">
+    <ul>
+        <li id="trk1">track 1</li>
+    </br>
+        <li id="trk2">track 2</li>
+    </br>
+
+        <li id="trk3">track 3</li>  
+    </br>    
+        <li id="trk4">track 4</li>
+
+    </ul>
+    <script src="musicPlayer.js"></script>
+</body>
+</html>
+
+
+
